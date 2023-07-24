@@ -95,7 +95,7 @@ dependencies {
     runtimeOnly fg.deobf("de.maxhenkel.corelib:corelib:${mod_minecraft_version}-${corelib_version}")
     runtimeOnly fg.deobf("de.maxhenkel.corelib:corelib:${mod_minecraft_version}-${corelib_version}:javadoc")
 
-    compile fg.deobf("mcp.mobius.waila:Hwyla:${hwyla_version}")
+    compile fg.deobf("curse.maven:hwyla-${hwyla_version}")
 
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
 }
@@ -197,6 +197,10 @@ repositories {
     maven {
         name 'tterrag maven'
         url "https://maven.tterrag.com/"
+    }
+    maven {
+        name 'Curse Maven'
+        url "https://cursemaven.com"
     }
     mavenLocal()
 }
